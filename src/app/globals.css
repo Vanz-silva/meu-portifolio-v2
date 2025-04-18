@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
 * {
   margin: 0%;
   padding: 0%;
@@ -461,8 +460,9 @@ footer a:hover {
   background-color: transparent;
   background: linear-gradient(
     330deg,
-    #ff76d5 10%,
-    #18ffb7 50%,
+    #23b1d8 25%,
+    #ff76d5 65%,
+    #23b1d8 0.5%,
     #ff76d5 65%,
     #18ffb7 90%
   );
@@ -499,7 +499,6 @@ footer a:hover {
   height: 100%;
   object-fit: cover;
 }
-
 
 .gradient-line {
   width: 100%;
@@ -617,6 +616,41 @@ footer a:hover {
   background: rgba(255, 0, 255);
 }
 
+#projects {
+  justify-content: center;
+  position: relative;
+}
+
+#nav {
+  position: absolute;
+  bottom: 132%;
+  left: 36%;
+}
+
+#lua {
+  position: absolute;
+  bottom: 100%;
+  left: 30%;
+}
+
+
+.linha-sobre {
+  justify-content: center;
+  position: relative;
+}
+
+#foguete {
+  position: absolute;
+  top: 54%;
+  left: 40%;
+}
+
+#saturno {
+  position: absolute;
+  left: -40%;
+  top: 19%;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -728,7 +762,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1999px) {
+@media (min-width: 1100px) and (max-width: 1999px) {
   .btn-colorido-2 {
     width: 274px !important;
     margin: 0 !important;
@@ -746,5 +780,14 @@ footer a:hover {
 
   .txt-ola {
     font-size: 54px !important;
+  }
+
+  .box-sobre {
+    padding-top: 14% !important;
+    padding-bottom: 14% !important;
+  }
+
+  #projects {
+    padding-top: 32% !important;
   }
 }
