@@ -47,9 +47,9 @@ const About = () => {
         </div>
 
         <div className="row pt-md-5 pb-md-5 mt-md-5 mb-md-5 linha-sobre">
-          <div className="box-sobre">
+          <div className="box-sobre" data-aos="fade-down">
             <div className="text-sobre d-flex justify-content-center display-4 align-items-center pt-md-5 mt-md-5 mt-sm-3 gap-3 d-flex text-center justify-content-center flex-column">
-              <div className="d-flex gap-3" data-aos="fade-down">
+              <div className="d-flex gap-3">
                 <div className={styles.name}>
                   {[
                     { letter: "S", color: "#23b1d8" },
@@ -84,17 +84,35 @@ const About = () => {
                   ))}
                 </div>
               </div>
-              <h5>
-                Está buscando uma desenvolvedora front-end que transforme suas
-                ideias em experiências digitais incríveis? Eu sou a pessoa
-                certa! Apaixonada por programação há dois anos, tenho expertise
-                em HTML, CSS, JavaScript, React, Next.js, Python, Material UI e
-                Bootstrap. Crio interfaces web que combinam design atraente e
-                funcionalidade. Sempre em busca de inovação e desafios, pensadas
-                para proporcionar a melhor experiência para o usuário. Vamos
-                construir algo juntos?
-              </h5>
+              <div>
+                <h5>
+                  Está buscando uma desenvolvedora front-end que transforme suas
+                  ideias em experiências digitais incríveis? Eu sou a pessoa
+                  certa! Apaixonada por programação há dois anos, tenho
+                  expertise em HTML, CSS, JavaScript, React, Next.js, Python,
+                  Material UI e Bootstrap. Crio interfaces web que combinam
+                  design atraente e funcionalidade. Sempre em busca de inovação
+                  e desafios, pensadas para proporcionar a melhor experiência
+                  para o usuário. Vamos construir algo juntos?
+                </h5>
+              </div>
             </div>
+          </div>
+          <div id="saturno">
+            <img
+              src="/img/saturno.png"
+              width="20%"
+              alt="Descrição da imagem"
+              className="img-fluid"
+            />
+          </div>
+          <div id="foguete">
+            <img
+              src="/img/foguet.png"
+              width="25%"
+              alt="Descrição da imagem"
+              className="img-fluid"
+            />
           </div>
         </div>
       </div>

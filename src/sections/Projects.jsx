@@ -3,8 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./About.module.css";
 
 const Projects = () => (
-  <section id="projects" className="pt-5 mt-5" data-aos="fade-down-right">
-    <div className="container d-flex  justify-content-center pb-5">
+  <section id="projects" className="pt-5 mt-5">
+    <div
+      className="container d-flex  justify-content-center pb-5"
+      data-aos="fade-down"
+    >
       <div className="row d-flex">
         <div className=" d-flex justify-content-center display-4 align-items-center">
           <div className={styles.name}>
@@ -29,6 +32,14 @@ const Projects = () => (
           </div>
         </div>
       </div>
+      {/*<div id="nav">
+        <img
+          src="/img/nav-ali.png"
+          width="80%"
+          alt="Descrição da imagem"
+          className="img-fluid"
+        />
+      </div>*/}
     </div>
 
     <div
@@ -37,7 +48,7 @@ const Projects = () => (
     >
       <div className="row pt-md-5 mb-md-5 pb-md-5 ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta ">
+          <div className="txt-magmeta" data-aos="fade-right">
             <h1>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h1>
@@ -53,17 +64,20 @@ const Projects = () => (
           </div>
         </div>
         <div className="col-md-6 col-sm-12 box-projeto">
-          <div className="justify-content-end d-flex box-mockup-img">
+          <div
+            className="justify-content-end d-flex box-mockup-img"
+            data-aos="fade-left"
+          >
             <img src="/img/mockup-celu.svg" alt="Descrição da Imagem" />
           </div>
         </div>
       </div>
       <div className="row pt-md-5 mt-md-5 pb-md-5 mb-dm-5">
-        <div className="col-md-7 col-sm-12 box-projeto">
+        <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-right">
           <img src="/img/mockup-pc3.svg" alt="Descrição da Imagem" />
         </div>
         <div className="col-md-5 col-sm-12 d-flex texto">
-          <div className="txt-magmeta">
+          <div className="txt-magmeta" data-aos="fade-left">
             <h1>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h1>
@@ -77,6 +91,33 @@ const Projects = () => (
               como referência no mercado. Um projeto que une tecnologia e
               estratégia para resultados reais!
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="row pt-md-5 mb-md-5 pb-md-5 ">
+        <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
+          <div className="txt-magmeta" data-aos="fade-right">
+            <h1>
+              Apresentando o site da Magmenta: moderno, funcional e estratégico!
+            </h1>
+            <p>
+              Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
+              foi criado para captar clientes e apresentar os produtos da
+              empresa de forma clara e profissional. Com design responsivo,
+              adapta-se a qualquer dispositivo, garantindo uma navegação fluida
+              e acessível. Funcionalidades interativas e um layout alinhado à
+              identidade visual reforçam a credibilidade e posicionam a Magmenta
+              como referência no mercado!
+            </p>
+          </div>
+        </div>
+        <div className="col-md-6 col-sm-12 box-projeto">
+          <div
+            className="justify-content-end d-flex box-mockup-img"
+            data-aos="fade-left"
+          >
+            <img src="/img/mockup-celu.svg" alt="Descrição da Imagem" />
           </div>
         </div>
       </div>
@@ -88,7 +129,7 @@ const Projects = () => (
     >
       <div className="row  mb-5 pb-5 ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta  text-center ">
+          <div className="txt-magmeta  text-center" data-aos="fade-down">
             <h2>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h2>
@@ -104,14 +145,17 @@ const Projects = () => (
           </div>
         </div>
         <div className="col-md-6 col-sm-12 box-projeto">
-          <div className="justify-content-end d-flex box-mockup-img">
+          <div
+            className="justify-content-end d-flex box-mockup-img"
+            data-aos="fade-down"
+          >
             <img src="/img/mockup-cel-mobile.svg" alt="Descrição da Imagem" />
           </div>
         </div>
       </div>
       <div className="row pt-5  pb-5 mb-dm-5">
         <div className="col-md-5 col-sm-12 d-flex texto">
-          <div className="txt-magmeta text-center">
+          <div className="txt-magmeta text-center" data-aos="fade-down">
             <h2>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h2>
@@ -127,7 +171,7 @@ const Projects = () => (
             </p>
           </div>
         </div>
-        <div className="col-md-7 col-sm-12 box-projeto">
+        <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-down">
           <img src="/img/mockup-pc-mobile.svg" alt="Descrição da Imagem" />
         </div>
       </div>
@@ -136,7 +180,7 @@ const Projects = () => (
     <div className="container-fluid pt-5 pb-5 mb-5 mt-5">
       <div className="row pt-5 pb-5 d-flex justify-content-center flex-colunm align-items-center">
         <div className="col-md-6 justify-content-center col-sm-12 d-flex">
-          <div className="circle circle2">
+          <div className="circle circle2" data-aos="fade-right">
             <img
               src="/img/cyberVanz2.png"
               width="60%"
@@ -145,7 +189,7 @@ const Projects = () => (
             />
           </div>
         </div>
-        <div className="col-md-6 col-xs-12 pt-5 box-vamos">
+        <div className="col-md-6 col-xs-12 pt-5 box-vamos" data-aos="fade-left">
           <h1>
             Conheça mais sobre meu trabalho entre em contato! Vamos conversar?!
           </h1>
