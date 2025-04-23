@@ -51,26 +51,27 @@ const Skills = () => {
             </div>
           </div>
         </div>
-
+      </div>
+      <div className="swiper-full-width swiper">
         <Swiper
-          modules={[Autoplay, Pagination]} // Registro explícito dos módulos
+          modules={[Autoplay]}
+          loop={true}
+          slidesPerView={3}
+          spaceBetween={20}
+          speed={3000}
           autoplay={{
-            delay: 3000,
+            delay: 0,
             disableOnInteraction: false,
           }}
-          pagination={{ clickable: true }}
-          loop={true}
-          spaceBetween={20}
-          slidesPerView={3}
+          allowTouchMove={false}
           breakpoints={{
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
+            768: { slidesPerView: 5 },
+            1024: { slidesPerView: 6 },
           }}
-          className="row box-texto-logos"
+          className="smooth-carousel"
         >
-          {/* Renderizando cada logo do array */}
           {skillsLogos.map((logo, index) => (
-            <SwiperSlide key={index} className="col-3 logo-container">
+            <SwiperSlide key={index} className="logo-container">
               <SkillCard src={logo.src} alt={logo.alt} />
             </SwiperSlide>
           ))}
