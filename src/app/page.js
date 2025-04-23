@@ -3,8 +3,9 @@ import Footer from "@/components/Footer";
 import About from "@/sections/About";
 import Skills from "@/sections/Skills";
 import Projects from "@/sections/Projects";
-import ResponsiveGrid from '@/sections/Cards';
+import ResponsiveGrid from "@/sections/Cards";
 import "bootstrap/dist/css/bootstrap.min.css";
+import MatrixSection from "@/components/MatrixSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <ResponsiveGrid />
         <Projects />
       </main>
+      <MatrixSection />
       <Footer />
     </>
   );
