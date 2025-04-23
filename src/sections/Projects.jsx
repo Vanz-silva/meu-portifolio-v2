@@ -32,14 +32,14 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      {/*<div id="nav">
+      <div id="nav">
         <img
           src="/img/nav-ali.png"
-          width="80%"
+          width="70%"
           alt="Descrição da imagem"
-          className="img-fluid"
+          className="img-fluid planeta-img"
         />
-      </div>*/}
+      </div>
     </div>
 
     <div
@@ -173,39 +173,6 @@ const Projects = () => (
         </div>
         <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-down">
           <img src="/img/mockup-pc-mobile.svg" alt="Descrição da Imagem" />
-        </div>
-      </div>
-    </div>
-
-    <div className="container-fluid pt-5 pb-5 mb-5 mt-5">
-      <div className="row pt-5 pb-5 d-flex justify-content-center flex-colunm align-items-center">
-        <div className="col-md-6 justify-content-center col-sm-12 d-flex">
-          <div className="circle circle2" data-aos="fade-right">
-            <img
-              src="/img/cyberVanz2.png"
-              width="60%"
-              alt="Descrição da imagem"
-              className="img-fluid"
-            />
-          </div>
-        </div>
-        <div className="col-md-6 col-xs-12 pt-5 box-vamos" data-aos="fade-left">
-          <h1>
-            Conheça mais sobre meu trabalho entre em contato! Vamos conversar?!
-          </h1>
-          <div className="d-flex box-btn-colorido-2 mt-3">
-            <a
-              href={`https://wa.me/5561991937866?text=${encodeURIComponent(
-                "Olá, gostaria de saber mais sobre você!"
-              )}`}
-              className="btn-colorido btn-colorido-2 bt-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-content="Vamos conversar"
-            >
-              <span className="txt-botao-conversar"></span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
