@@ -176,10 +176,6 @@ p {
   line-height: 1.5;
 }
 
-#sessao-sobre-mim {
-  margin-top: 10%;
-}
-
 #sobre-mim {
   color: #fff;
 }
@@ -286,13 +282,21 @@ p {
   transform: scale(1.2); /* Expande levemente o gradiente no hover */
 }
 
+.card-grid {
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+}
+
 .text-sobre {
   width: 50%;
 }
 
 .logos-tec {
-  margin-top: 14%;
-  margin-bottom: 14%;
+  margin-top: 10%;
+}
+
+.swiper {
+  padding-bottom: 10% !important;
 }
 
 .text-sobre {
@@ -347,21 +351,6 @@ p {
   display: inline-block; /* Para ajustar ao conteúdo */
 }
 
-.logo-container::after {
-  content: "";
-  position: absolute;
-  bottom: -12px; /* Ajuste conforme necessário */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%; /* Proporção da sombra em relação ao elemento */
-  height: 10px; /* Altura da sombra */
-  background: rgba(102, 16, 242); /* Cor da sombra */
-  filter: blur(8px); /* Suaviza a sombra */
-  z-index: -1; /* Coloca a sombra atrás da logo */
-  border-radius: 50%; /* Faz a sombra oval */
-  pointer-events: none; /* Evita interferências ao clicar */
-}
-
 .portifolio-box {
   display: flex; /* Habilita flexbox para as divs */
   justify-content: space-between; /* Distribui espaço entre as divs */
@@ -401,6 +390,14 @@ p {
 
 .swiper-pagination {
   display: none !important;
+}
+
+.smooth-carousel .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  margin-left: 0 !important;
 }
 
 footer {
@@ -624,7 +621,7 @@ footer a:hover {
 #nav {
   position: absolute;
   bottom: 132%;
-  left: 36%;
+  left: 37%;
 }
 
 #lua {
@@ -632,7 +629,6 @@ footer a:hover {
   bottom: 100%;
   left: 30%;
 }
-
 
 .linha-sobre {
   justify-content: center;
@@ -642,13 +638,56 @@ footer a:hover {
 #foguete {
   position: absolute;
   top: 54%;
-  left: 40%;
+  left: 71%;
 }
 
 #saturno {
   position: absolute;
-  left: -40%;
+  left: -6%;
   top: 19%;
+}
+
+.col-card {
+  background-color: rgba(255, 255, 255, 0.05); /* fundo transparente */
+  border: 1px solid rgba(57, 23, 81, 0.2); /* borda cinza clara */
+  border-radius: 18px;
+  backdrop-filter: blur(10px); /* efeito vidro fosco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* sombra sutil */
+  height: 300px; /* altura fixa para efeito */
+  padding: 1rem;
+}
+
+.floating-img {
+  animation: floatUltraSmooth 6s ease-in-out infinite;
+}
+
+@keyframes floatUltraSmooth {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px); /* Aumente o valor para flutuar mais alto */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#nav img {
+  animation: floatNav 6s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes floatNav {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px); /* Aumente o valor para flutuar mais alto */
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes rotate {
@@ -657,6 +696,23 @@ footer a:hover {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.planeta-img {
+  animation: rotateBrain 6s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotateBrain {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg); /* Gira suavemente para o lado */
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
