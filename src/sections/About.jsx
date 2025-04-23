@@ -4,8 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Button from "@/components/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "./About.module.css"; // Mantendo o CSS original
-
+import styles from "./About.module.css";
+import Image from "next/image";
 const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Inicializa AOS com animação de 1s
@@ -48,7 +48,7 @@ const About = () => {
 
         <div className="row pt-md-5 pb-md-5 mt-md-5 mb-md-5 linha-sobre">
           <div className="box-sobre" data-aos="fade-down">
-            <div className="text-sobre d-flex justify-content-center display-4 align-items-center pt-md-5 mt-md-5 mt-sm-3 gap-3 d-flex text-center justify-content-center flex-column">
+            <div className="text-sobre d-flex justify-content-center display-4 align-items-center pt-md-5 mt-md-5 mt-sm-3  d-flex text-center justify-content-center flex-column">
               <div className="d-flex gap-3">
                 <div className={styles.name}>
                   {[
@@ -98,20 +98,23 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div id="saturno">
-            <img
+          <div id="saturno" className="col-4">
+            <Image
               src="/img/saturno.png"
-              width="20%"
-              alt="Descrição da imagem"
-              className="img-fluid"
+              alt="Planeta Saturno"
+              width={200}
+              height={200}
+              className="floating-img planeta-img"
+              sizes="100%"
+              style={{ width: "80%", height: "auto" }}
             />
           </div>
-          <div id="foguete">
+          <div id="foguete" className="col-4">
             <img
               src="/img/foguet.png"
-              width="25%"
+              width="100%"
               alt="Descrição da imagem"
-              className="img-fluid"
+              className="img-fluid floating-img"
             />
           </div>
         </div>
