@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="swiper-full-width swiper">
+      <div className="swiper-full-width swiper p-0">
         <Swiper
           modules={[Autoplay]}
           loop={true}
