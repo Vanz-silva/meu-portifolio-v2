@@ -6,6 +6,7 @@ import Projects from "@/sections/Projects";
 import ResponsiveGrid from "@/sections/Cards";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MatrixSection from "@/components/MatrixSection";
+import Contato from "@/components/Contato";
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
       <main>
         <About />
         <Skills />
-        <ResponsiveGrid />
         <Projects />
+        <MatrixSection />
       </main>
-      <MatrixSection />
+      <Contato />
       <Footer />
     </>
   );
