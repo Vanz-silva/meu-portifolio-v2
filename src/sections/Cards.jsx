@@ -2,49 +2,42 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
-const ResponsiveGrid = () => {
+
+const CardGrid = () => {
   return (
-    <div className="container text-center card-grid">
-      <div className="row">
-        <div className="col-12 col-sm-4 col-md-4 col-card h-100">
-          <div className="d-flex justify-content-center align-items-center h-100 text-white">
+    <div className="container py-5">
+      <div className="d-flex flex-wrap justify-content-center gap-4">
+        {[
+          {
+            img: "/img/next1.png",
+            title:
+              "Next.js turbina o React com performance, SEO e carregamento inteligente de páginas.",
+          },
+          {
+            img: "/img/atomo.png",
+            title:
+              "React dá vida às interfaces com interações rápidas e experiências dinâmicas.",
+          },
+          { img: "/img/nodejs.png", title: "Node.js conecta tudo no backend, criando APIs velozes e escaláveis." },
+        ].map((card, index) => (
+          <div
+            key={index}
+            className="card col-card p-3 text-center"
+            style={{ width: "300px", flex: "1 1 280px", maxWidth: "100%" }}
+          >
             <Image
-              src="/img/cerebro.png"
-              alt="img cerebro"
+              src={card.img}
+              alt={card.title}
               width={100}
               height={100}
-              className="img-fluid cerebro-img m-3"
+              className="img-fluid mx-auto mb-3"
             />
+            <h2 className="h5">{card.title}</h2>
           </div>
-          <h2>Estrategia para seu negocio com inteligencia</h2>
-        </div>
-        <div className="col-12 col-sm-4 col-md-4 col-card h-100">
-          <div className="d-flex justify-content-center align-items-center h-100 text-white">
-            <Image
-              src="/img/cerebro.png"
-              alt="img cerebro"
-              width={100}
-              height={100}
-              className="img-fluid cerebro-img m-3"
-            />
-          </div>
-          <h2>Estrategia para seu negocio com inteligencia</h2>
-        </div>
-        <div className="col-12 col-sm-4 col-md-4 col-card h-100">
-          <div className="d-flex justify-content-center align-items-center h-100 text-white">
-            <Image
-              src="/img/cerebro.png"
-              alt="img cerebro"
-              width={100}
-              height={100}
-              className="img-fluid cerebro-img m-3"
-            />
-          </div>
-          <h2>Estrategia para seu negocio com inteligencia</h2>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default ResponsiveGrid;
+export default CardGrid;
