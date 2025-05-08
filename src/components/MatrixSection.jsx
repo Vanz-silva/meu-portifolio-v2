@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-
+import CardGrid from "@/sections/Cards";
 const MatrixSection = () => {
   const canvasRef = useRef(null);
 
@@ -68,15 +68,15 @@ const MatrixSection = () => {
       style={{
         position: "relative",
         width: "100%",
-        height: "100vh",
+        height: "70vh",
         overflow: "hidden",
         background: `linear-gradient(
           330deg,
-          #6610f2 10%,
+          #00ff00 10%,
           #18ffb7 40%,
-          #23b1d8 0.5%,
-          #ff76d5 65%,
-          #6610f2 90%
+          #00e600 40%,
+          #009900 70%,
+          #003300 90%
         )`,
         display: "flex",
         alignItems: "center",
@@ -107,42 +107,7 @@ const MatrixSection = () => {
           color: "#000",
         }}
       >
-        <div className="row pt-5 pb-5 d-flex justify-content-between flex-colunm align-items-center">
-          <div
-            className="col-md-5 col-xs-12 pt-5 box-vamos"
-            data-aos="fade-left"
-          >
-            <h1 id="txt-b-matrix">
-              Conheça mais sobre meu trabalho entre em contato! Vamos
-              conversar?!
-            </h1>
-            <div className="d-flex box-btn-colorido-2 mt-3">
-              <a
-                href={`https://wa.me/5561991937866?text=${encodeURIComponent(
-                  "Olá, gostaria de saber mais sobre você!"
-                )}`}
-                className="btn-colorido btn-colorido-2 bt-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-content="Vamos conversar"
-              >
-                <span className="txt-botao-conversar"></span>
-              </a>
-            </div>
-          </div>
-          <div className="col-md-7 pt-3 justify-content-center d-flex box-perfil">
-            <div className="circle-wrapper" data-aos="zoom-in-up">
-              <div className="circle">
-                <img
-                  src="/img/vr.png"
-                  width="100%"
-                  alt="Descrição da imagem"
-                  className="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <CardGrid />
       </div>
     </section>
   );
