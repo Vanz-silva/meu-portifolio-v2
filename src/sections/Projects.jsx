@@ -1,6 +1,7 @@
 "use client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./About.module.css";
+import Image from "next/image";
 
 const Projects = () => (
   <section id="projects" className="pt-5 mt-5">
@@ -33,10 +34,12 @@ const Projects = () => (
         </div>
       </div>
       <div id="nav">
-        <img
+        <Image
           src="/img/nav-ali.png"
-          width="70%"
           alt="Descrição da imagem"
+          width={0}
+          height={0}
+          style={{ width: "70%", height: "auto" }}
           className="img-fluid planeta-img"
         />
       </div>
@@ -68,13 +71,25 @@ const Projects = () => (
             className="justify-content-end d-flex box-mockup-img"
             data-aos="fade-left"
           >
-            <img src="/img/mockup-celu.svg" alt="Descrição da Imagem" />
+            <Image
+              src="/img/mockup-celu.svg"
+              alt="Descrição da Imagem"
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+            />
           </div>
         </div>
       </div>
       <div className="row pt-md-5 mt-md-5 pb-md-5 mb-dm-5">
         <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-right">
-          <img src="/img/mockup-pc3.svg" alt="Descrição da Imagem" />
+          <Image
+            src="/img/mockup-pc3.svg"
+            alt="Descrição da Imagem"
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
         <div className="col-md-5 col-sm-12 d-flex texto">
           <div className="txt-magmeta" data-aos="fade-left">
@@ -117,7 +132,13 @@ const Projects = () => (
             className="justify-content-end d-flex box-mockup-img"
             data-aos="fade-left"
           >
-            <img src="/img/mockup-celu.svg" alt="Descrição da Imagem" />
+            <Image
+              src="/img/mockup-celu.svg"
+              alt="Descrição da Imagem"
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+            />
           </div>
         </div>
       </div>
@@ -149,7 +170,13 @@ const Projects = () => (
             className="justify-content-end d-flex box-mockup-img"
             data-aos="fade-down"
           >
-            <img src="/img/mockup-cel-mobile.svg" alt="Descrição da Imagem" />
+            <Image
+              src="/img/mockup-cel-mobile.svg"
+              alt="Descrição da Imagem"
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+            />
           </div>
         </div>
       </div>
@@ -172,7 +199,13 @@ const Projects = () => (
           </div>
         </div>
         <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-down">
-          <img src="/img/mockup-pc-mobile.svg" alt="Descrição da Imagem" />
+          <Image
+            src="/img/mockup-pc-mobile.svg"
+            alt="Descrição da Imagem"
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
       </div>
     </div>
