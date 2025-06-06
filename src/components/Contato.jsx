@@ -5,7 +5,7 @@ const Contato = () => {
   return (
     <div className="container">
       <div className="row pt-5 pb-5 d-flex justify-content-between  align-items-center">
-        <div className="col-md-5 col-xs-12 pt-5 box-vamos" data-aos="fade-left">
+        <div className="col-md-7 col-xs-12 pt-5 box-vamos" data-aos="fade-left">
           <h1 id="txt-b-matrix">
             Conheça mais sobre meu trabalho entre em contato! Vamos conversar?!
           </h1>
@@ -24,7 +24,7 @@ const Contato = () => {
           </div>
         </div>
 
-        <div className="col-md-7 pt-3 justify-content-center d-flex box-perfil">
+        <div className="col-md-5 pt-3 justify-content-end d-flex box-perfil">
           <div className="circle-wrapper" data-aos="zoom-in-up">
             <div className="circle">
               <img
