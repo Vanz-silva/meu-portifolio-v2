@@ -32,7 +32,7 @@ const CardGrid = () => {
               height={100}
               className="img-fluid mx-auto mb-3"
             />
-            <h2 className="h5">{card.title}</h2>
+            <h4 className="h5 text-white">{card.title} </h4>
           </div>
         ))}
       </div>
