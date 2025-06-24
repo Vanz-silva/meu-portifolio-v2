@@ -33,14 +33,15 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div id="nav">
+      <div className=" d-flex justify-content-center" id="nav">
         <Image
-          src="/img/nav-ali.png"
+          src="/img/et.png"
           alt="Descrição da imagem"
-          width={0}
-          height={0}
-          style={{ width: "70%", height: "auto" }}
-          className="img-fluid planeta-img"
+          width={100}
+          height={100}
+          sizes="100%"
+          style={{ width: "100%" }}
+          className="img-fluid"
         />
       </div>
     </div>
