@@ -72,25 +72,37 @@ const Projects = () => (
             className="justify-content-end d-flex box-mockup-img"
             data-aos="fade-left"
           >
-            <Image
-              src="/img/mockup-celu.svg"
-              alt="Descrição da Imagem"
-              width={0}
-              height={0}
-              style={{ width: "100%", height: "auto" }}
-            />
+            <a
+              href="https://magmeta.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/img/mockup-celu.svg"
+                alt="Descrição da Imagem"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </a>
           </div>
         </div>
       </div>
       <div className="row pt-md-5 mt-md-5 pb-md-5 mb-dm-5">
         <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-right">
-          <Image
-            src="/img/mockup-pc3.svg"
-            alt="Descrição da Imagem"
-            width={0}
-            height={0}
-            style={{ width: "100%", height: "auto" }}
-          />
+          <a
+            href="https://magmeta.com.br/quem-somos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/img/mockup-pc3.svg"
+              alt="Descrição da Imagem"
+              width={0}
+              height={0}
+              style={{ width: "100%", height: "auto" }}
+            />
+          </a>
         </div>
         <div className="col-md-5 col-sm-12 d-flex texto">
           <div className="txt-magmeta" data-aos="fade-left">
