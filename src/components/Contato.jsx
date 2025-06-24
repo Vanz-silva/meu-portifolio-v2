@@ -26,17 +26,15 @@ const Contato = () => {
 
         <div className="col-md-5 pt-3 justify-content-end d-flex box-perfil">
           <div className="circle-wrapper" data-aos="zoom-in-up">
-            <div className="circle">
-              <Image
-                src="/img/vr.png"
-                width={0}
-                height={0}
-                sizes="100%"
-                style={{ width: "100%", height: "auto" }}
-                alt="Descrição da imagem"
-                className="img-fluid"
-              />
-            </div>
+            <Image
+              src="/img/v.png"
+              width={0}
+              height={0}
+              sizes="100%"
+              style={{ width: "100%", height: "auto" }}
+              alt="Descrição da imagem"
+              className="img-fluid floating-img"
+            />
           </div>
         </div>
       </div>
