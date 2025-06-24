@@ -35,9 +35,12 @@ const About = () => {
               <div className="circle-border border2"></div>
               <div className="circle-border border3"></div>
               <div className="circle">
-                <img
+                <Image
+                  sizes="100%"
+                  style={{ width: "100%", height: "100%" }}
                   src="/img/cyberVanz.png"
-                  width="60%"
+                  width={0}
+                  height={0}
                   alt="Descrição da imagem"
                   className="img-fluid"
                 />
@@ -102,19 +105,22 @@ const About = () => {
             <Image
               src="/img/saturno.png"
               alt="Planeta Saturno"
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               className="floating-img planeta-img"
               sizes="100%"
-              style={{ width: "80%", height: "auto" }}
+              style={{ width: "50%", height: "auto" }}
             />
           </div>
           <div id="foguete" className="col-4">
-            <img
+            <Image
+              width={100}
+              height={100}
               src="/img/foguet.png"
-              width="100%"
+              sizes="100%"
+              style={{ width: "100%", height: "auto" }}
               alt="Descrição da imagem"
-              className="img-fluid floating-img"
+              className="img-fluid floating-img  planeta-img"
             />
           </div>
         </div>
