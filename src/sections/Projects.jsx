@@ -33,9 +33,9 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className=" d-flex justify-content-center" id="nav">
+      <div className=" d-flex justify-content-center" id="et">
         <Image
-          src="/img/et.png"
+          src="/img/ett.png"
           alt="Descrição da imagem"
           width={100}
           height={100}
