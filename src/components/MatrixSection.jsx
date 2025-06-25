@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import CardGrid from "@/sections/Cards";
+
 const MatrixSection = () => {
   const canvasRef = useRef(null);
 
@@ -8,25 +9,29 @@ const MatrixSection = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
+    const binary = "01";
+    const fontSize = 16;
+    let columns = 0;
+    let drops = [];
+
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const parent = canvas.parentElement;
+      if (parent) {
+        canvas.width = parent.scrollWidth;
+        canvas.height = parent.scrollHeight;
+
+        columns = Math.floor(canvas.width / fontSize);
+        drops = Array(columns).fill(1);
+      }
     };
 
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
-    const binary = "01";
-    const fontSize = 16;
-    const columns = Math.floor(canvas.width / fontSize);
-    const drops = Array(columns).fill(1);
-
     const draw = () => {
-      // Fundo escuro com leve opacidade para dar efeito de trilha
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Criar gradiente para o texto
       const gradient = ctx.createLinearGradient(
         0,
         0,
@@ -68,7 +73,7 @@ const MatrixSection = () => {
       style={{
         position: "relative",
         width: "100%",
-        height: "70vh",
+        minHeight: "auto",
         overflow: "hidden",
         background: `linear-gradient(
           330deg,
@@ -79,6 +84,7 @@ const MatrixSection = () => {
           #003300 90%
         )`,
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         fontFamily: "monospace",
