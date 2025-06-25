@@ -619,9 +619,9 @@ footer a:hover {
   position: relative;
 }
 
-#nav {
+#et {
   position: absolute;
-  bottom: 132%;
+  bottom: 55%;
   left: 42%;
 }
 
@@ -646,6 +646,10 @@ footer a:hover {
   position: absolute;
   left: -6%;
   top: 19%;
+}
+
+#txt-b-matrix {
+  font-size: 48px;
 }
 
 .col-card {
@@ -679,7 +683,7 @@ footer a:hover {
   }
 }
 
-#nav img {
+#et img {
   animation: floatNav 6s ease-in-out infinite;
   transform-origin: center center;
 }
@@ -794,6 +798,17 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+  #txt-b-matrix {
+    font-size: 32px;
+  }
+
+  #et {
+    position: absolute;
+    bottom: 70%;
+    left: 33%;
+    width: 30% !important;
+  }
+
   #foguete {
     display: none !important;
   }
