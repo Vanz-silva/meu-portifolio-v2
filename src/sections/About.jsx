@@ -6,13 +6,15 @@ import Button from "@/components/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./About.module.css";
 import Image from "next/image";
+import { Player } from "@lottiefiles/react-lottie-player";
+
 const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Inicializa AOS com animação de 1s
   }, []);
 
   return (
-    <section id="about">
+    <section id="about" className="position-relative">
       <div className="container text-center" id="sessao-sobre-mim">
         <div className="row mb-md-5 mt-5 align-items-center">
           {/* Primeira coluna */}
@@ -88,6 +90,26 @@ const About = () => {
                 </div>
               </div>
               <div>
+                <div id="foguete" className="col-4">
+                  <Player
+                    autoplay
+                    loop
+                    src="/lotties/astrou.json"
+                    className="floating-img planeta-img"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
+                <div id="saturno" className="col-4">
+                  <Player
+                    autoplay
+                    loop
+                    src="/lotties/planet.json"
+                    className="floating-img planeta-img"
+                    style={{ width: "50%", height: "auto" }}
+                  />
+                </div>
+              </div>
+              <div>
                 <h5>
                   Está buscando uma desenvolvedora front-end que transforme suas
                   ideias em experiências digitais incríveis? Eu sou a pessoa
@@ -100,28 +122,6 @@ const About = () => {
                 </h5>
               </div>
             </div>
-          </div>
-          <div id="saturno" className="col-4">
-            <Image
-              src="/img/saturno.png"
-              alt="Planeta Saturno"
-              width={100}
-              height={100}
-              className="floating-img planeta-img"
-              sizes="100%"
-              style={{ width: "50%", height: "auto" }}
-            />
-          </div>
-          <div id="foguete" className="col-4">
-            <Image
-              width={100}
-              height={100}
-              src="/img/foguet.png"
-              sizes="100%"
-              style={{ width: "100%", height: "auto" }}
-              alt="Descrição da imagem"
-              className="img-fluid floating-img  planeta-img"
-            />
           </div>
         </div>
       </div>

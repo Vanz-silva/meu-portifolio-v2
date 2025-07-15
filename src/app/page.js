@@ -7,6 +7,8 @@ import ResponsiveGrid from "@/sections/Cards";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MatrixSection from "@/components/MatrixSection";
 import Contato from "@/components/Contato";
+import Lottie from "@/components/Lottie"
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <MatrixSection />
+        <Lottie />
       </main>
       <Contato />
       <Footer />
