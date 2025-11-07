@@ -6,6 +6,9 @@ const MatrixSection = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    // 🚧 Garante que o código só rode no navegador
+    if (typeof window === "undefined" || !canvasRef.current) return;
+
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
@@ -29,6 +32,7 @@ const MatrixSection = () => {
     window.addEventListener("resize", resizeCanvas);
 
     const draw = () => {
+      if (!ctx) return;
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -73,7 +77,6 @@ const MatrixSection = () => {
       style={{
         position: "relative",
         width: "100%",
-        minHeight: "auto",
         overflow: "hidden",
         background: `linear-gradient(
           330deg,
@@ -90,7 +93,6 @@ const MatrixSection = () => {
         fontFamily: "monospace",
       }}
     >
-      {/* Canvas da chuva */}
       <canvas
         ref={canvasRef}
         style={{
@@ -103,8 +105,6 @@ const MatrixSection = () => {
           pointerEvents: "none",
         }}
       />
-
-      {/* Conteúdo por cima */}
       <div
         className="container"
         style={{
