@@ -33,7 +33,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className=" d-flex justify-content-center" id="et">
+      <div className="d-flex justify-content-center" id="et">
         <Image
           src="/img/ett.png"
           alt="Descrição da imagem"
