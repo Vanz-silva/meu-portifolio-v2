@@ -6,7 +6,6 @@ const MatrixSection = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    // 🚧 Garante que o código só rode no navegador
     if (typeof window === "undefined" || !canvasRef.current) return;
 
     const canvas = canvasRef.current;
@@ -33,22 +32,12 @@ const MatrixSection = () => {
 
     const draw = () => {
       if (!ctx) return;
+      // cria um leve fade preto pra deixar o rastro da "chuva"
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      const gradient = ctx.createLinearGradient(
-        0,
-        0,
-        canvas.width,
-        canvas.height
-      );
-      gradient.addColorStop(0.1, "#6610f2");
-      gradient.addColorStop(0.4, "#18ffb7");
-      gradient.addColorStop(0.5, "#23b1d8");
-      gradient.addColorStop(0.65, "#ff76d5");
-      gradient.addColorStop(0.9, "#6610f2");
-
-      ctx.fillStyle = gradient;
+      // agora é uma cor roxa sólida
+      ctx.fillStyle = "#7B2FF7";
       ctx.font = `${fontSize}px monospace`;
 
       drops.forEach((y, i) => {
@@ -78,14 +67,7 @@ const MatrixSection = () => {
         position: "relative",
         width: "100%",
         overflow: "hidden",
-        background: `linear-gradient(
-          330deg,
-          #00ff00 10%,
-          #18ffb7 40%,
-          #00e600 40%,
-          #009900 70%,
-          #003300 90%
-        )`,
+        backgroundColor: "#000", // fundo preto fixo sem gradiente
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -110,7 +92,7 @@ const MatrixSection = () => {
         style={{
           position: "relative",
           zIndex: 2,
-          color: "#000",
+          color: "#fff",
         }}
       >
         <CardGrid />
