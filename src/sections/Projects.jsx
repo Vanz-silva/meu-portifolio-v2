@@ -4,12 +4,13 @@ import styles from "./About.module.css";
 import Image from "next/image";
 
 const Projects = () => (
-  <section id="projects" className="pt-5 mt-5">
+  <section id="projects" className="ps">
     <div
-      className="container d-flex  justify-content-center pb-5"
+      className="container align-items-center pc d-grid d-none d-md-flex gap-5 flex-column portifolio-box"
+      id="portifolio-desktop"
       data-aos="fade-down"
     >
-      <div className="row d-flex">
+      <div className="row">
         <div className=" d-flex justify-content-center display-4 align-items-center">
           <div className={styles.name}>
             {[
@@ -33,24 +34,8 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className="d-flex justify-content-center" id="et">
-        <Image
-          src="/img/ett.png"
-          alt="Descrição da imagem"
-          width={100}
-          height={100}
-          sizes="100%"
-          style={{ width: "100%" }}
-          className="img-fluid"
-        />
-      </div>
-    </div>
 
-    <div
-      className="container d-flex d-none d-md-block justify-content-center flex-column portifolio-box"
-      id="portifolio-desktop"
-    >
-      <div className="row pt-md-5 mb-md-5 pb-md-5 ">
+      <div className="row ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
           <div className="txt-magmeta" data-aos="fade-right">
             <h1>
@@ -88,7 +73,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className="row pt-md-5 mt-md-5 pb-md-5 mb-dm-5">
+      <div className="row ">
         <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-right">
           <a
             href="https://magmeta.com.br/quem-somos"
@@ -123,7 +108,7 @@ const Projects = () => (
         </div>
       </div>
 
-      <div className="row pt-md-5 mb-md-5 pb-md-5 ">
+      <div className="row ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
           <div className="txt-magmeta" data-aos="fade-right">
             <h1>
