@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <StarryBackground /> {/* Adicionamos a animação aqui */}
+        <StarryBackground /> {/* animação aqui */}
         {children}
       </body>
     </html>
