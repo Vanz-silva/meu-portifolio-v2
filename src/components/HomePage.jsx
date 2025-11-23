@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MatrixSection from "@/components/MatrixSection";
 import Contato from "@/components/Contato";
 import Lottie from "@/components/Lottie";
+import AboutWork from "@/sections/AboutWork";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Header />
       <main>
         <About />
+        <AboutWork />
         <Skills />
         <Projects />
         <MatrixSection />
