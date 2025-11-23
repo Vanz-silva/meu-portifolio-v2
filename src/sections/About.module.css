@@ -22,7 +22,7 @@
   transition: color 0.5s, text-shadow 0.5s;
 }
 
-/* 🔥 Efeito de brilho e preenchimento ao passar o mouse */
+/*  Efeito de brilho e preenchimento ao passar o mouse */
 .cosmic:hover span {
   color: var(--color); /* Letra preenchida */
   text-shadow: 0 0 10px var(--color), 0 0 20px var(--color),

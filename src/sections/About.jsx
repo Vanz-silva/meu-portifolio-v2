@@ -14,20 +14,20 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="position-relative">
-      <div className="container text-center" id="sessao-sobre-mim">
-        <div className="row mb-md-5 mt-5 align-items-center">
+    <section id="about" className="position-relative ps">
+      <div className="container pc text-center" id="sessao-sobre-mim">
+        <div className="row align-items-center">
           {/* Primeira coluna */}
-          <div className="col-md-7 linha-cab" data-aos="fade-right">
-            <div id="sobre-mim">
+          <div className="col-md-7  linha-cab" data-aos="fade-right">
+            <div id="sobre-mim" className="gap-3 d-flex flex-column">
               <h1 className="text-colorido txt-ola">
                 Olá, Eu sou a Vanessa Silva
               </h1>
               <div className="p-1">
                 <h5>Desenvolvedora Front-End</h5>
               </div>
+              <Button text="Vamos Conversar" />
             </div>
-            <Button text="Vamos Conversar" />
           </div>
 
           {/* Segunda coluna */}
@@ -46,80 +46,6 @@ const About = () => {
                   alt="Descrição da imagem"
                   className="img-fluid"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row pt-md-5 pb-md-5 mt-md-5 mb-md-5 linha-sobre">
-          <div className="box-sobre" data-aos="fade-down">
-            <div className="text-sobre d-flex justify-content-center display-4 align-items-center pt-md-5 mt-md-5 mt-sm-3  d-flex text-center justify-content-center flex-column">
-              <div className="d-flex gap-3">
-                <div className={styles.name}>
-                  {[
-                    { letter: "S", color: "#23b1d8" },
-                    { letter: "o", color: "#dc5fe2" },
-                    { letter: "b", color: "#b733f9" },
-                    { letter: "r", color: "#a0de59" },
-                    { letter: "e", color: "#83d1ad" },
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className={styles.cosmic}
-                      style={{ "--color": item.color }}
-                    >
-                      <span>{item.letter}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className={styles.name}>
-                  {[
-                    { letter: "m", color: "#23b1d8" },
-                    { letter: "i", color: "#dc5fe2" },
-                    { letter: "m", color: "#b733f9" },
-                  ].map((item, index) => (
-                    <div
-                      key={index}
-                      className={styles.cosmic}
-                      style={{ "--color": item.color }}
-                    >
-                      <span>{item.letter}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <div id="foguete" className="col-4">
-                  <Player
-                    autoplay
-                    loop
-                    src="/lotties/astrou.json"
-                    className="floating-img planeta-img"
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                </div>
-                <div id="saturno" className="col-4">
-                  <Player
-                    autoplay
-                    loop
-                    src="/lotties/planet.json"
-                    className="floating-img planeta-img"
-                    style={{ width: "50%", height: "auto" }}
-                  />
-                </div>
-              </div>
-              <div>
-                <h5>
-                  Está buscando uma desenvolvedora front-end que transforme suas
-                  ideias em experiências digitais incríveis? Eu sou a pessoa
-                  certa! Apaixonada por programação há dois anos, tenho
-                  expertise em HTML, CSS, JavaScript, React, Next.js, Python,
-                  Material UI e Bootstrap. Crio interfaces web que combinam
-                  design atraente e funcionalidade. Sempre em busca de inovação
-                  e desafios, pensadas para proporcionar a melhor experiência
-                  para o usuário. Vamos construir algo juntos?
-                </h5>
               </div>
             </div>
           </div>

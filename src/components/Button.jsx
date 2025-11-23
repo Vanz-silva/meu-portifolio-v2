@@ -1,6 +1,6 @@
 const Button = () => {
   return (
-    <div className="justify-content-center gap-1 d-flex pt-3">
+    <div className="justify-content-center gap-1 d-flex">
       <a
         href="/VanessaCvDev.pdf"
         className="btn-colorido bt-2"

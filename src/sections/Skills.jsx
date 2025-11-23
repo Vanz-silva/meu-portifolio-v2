@@ -27,10 +27,10 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills">
-      <div className="container text-center logos-tec" data-aos="fade-down">
+    <section id="skills" className="ps">
+      <div className="container text-center logos-tec pd" data-aos="fade-down">
         <div className="row box-texto-logos text-center">
-          <div className=" d-flex justify-content-center display-4 align-items-center">
+          <div className=" d-flex justify-content-center display-4 align-items-center mb-4">
             <div className={styles.name}>
               {[
                 { letter: "S", color: "#23b1d8" },
