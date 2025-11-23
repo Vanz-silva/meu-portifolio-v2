@@ -60,6 +60,16 @@ h1 {
   font-weight: 600 !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 ul {
   list-style: none;
   padding-left: 0 !important;
@@ -145,7 +155,7 @@ h4 {
 }
 
 .box-des {
-  border-left: 2px solid #6610f2 ;
+  border-left: 2px solid #6610f2;
 }
 
 h6,
@@ -312,14 +322,6 @@ p {
   width: 50%;
 }
 
-.logos-tec {
-  margin-top: 10%;
-}
-
-.swiper {
-  padding-bottom: 10% !important;
-}
-
 .text-sobre {
   background: linear-gradient(
     330deg,
@@ -336,9 +338,6 @@ p {
 .box-texto-logos {
   color: #fff;
   font-family: sans-serif;
-  margin-top: 3rem !important;
-  margin-bottom: 5rem !important;
-  padding-bottom: 5%;
 }
 
 #linha-logos {
@@ -702,6 +701,14 @@ footer a:hover {
   100% {
     transform: translateY(0px);
   }
+}
+
+.pc {
+  padding: 44px 0 44px 0px !important;
+}
+
+.ps {
+  padding: 54px 0 54px 0px !important;
 }
 
 #et img {
