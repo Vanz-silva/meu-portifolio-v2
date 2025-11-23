@@ -322,6 +322,14 @@ p {
   width: 50%;
 }
 
+.po {
+  padding-top: 44px !important;
+}
+
+.pbm {
+  padding-bottom: 44px !important;
+} 
+
 .text-sobre {
   background: linear-gradient(
     330deg,
@@ -904,9 +912,5 @@ footer a:hover {
   .box-sobre {
     padding-top: 14% !important;
     padding-bottom: 14% !important;
-  }
-
-  #projects {
-    padding-top: 32% !important;
   }
 }

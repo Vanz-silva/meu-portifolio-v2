@@ -13,7 +13,7 @@
   transition: 0.3s ease-in-out;
 }
 
-/* 🖋️ Letra com contorno inicial */
+/* Letra com contorno inicial */
 .cosmic span {
   font-size: var(--font-size);
   font-weight: 700;
