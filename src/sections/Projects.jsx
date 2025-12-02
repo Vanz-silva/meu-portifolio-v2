@@ -10,8 +10,8 @@ const Projects = () => (
       id="portifolio-desktop"
       data-aos="fade-down"
     >
-      <div className="row">
-        <div className=" d-flex justify-content-center display-4 align-items-center">
+      <div className="row ">
+        <div className=" d-flex justify-content-center display-4 align-items-center py-2">
           <div className={styles.name}>
             {[
               { letter: "P", color: "#23b1d8" },
@@ -33,9 +33,6 @@ const Projects = () => (
             ))}
           </div>
         </div>
-      </div>
-
-      <div className="row ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
           <div className="txt-magmeta" data-aos="fade-right">
             <h1>
