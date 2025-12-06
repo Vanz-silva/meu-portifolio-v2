@@ -28,7 +28,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="ps">
-      <div className="container text-center logos-tec po" data-aos="fade-down">
+      <div className="container text-center logos-tec po">
         <div className="row box-texto-logos text-center">
           <div className=" d-flex justify-content-center display-4 align-items-center mb-5">
             <div className={styles.name}>
@@ -52,7 +52,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="swiper-full-width swiper pbm">
+      <div className="swiper-full-width swiper">
         <Swiper
           modules={[Autoplay]}
           loop={true}

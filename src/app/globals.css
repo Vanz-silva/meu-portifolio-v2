@@ -278,7 +278,6 @@ p {
 .box-sobre {
   display: flex;
   justify-content: center;
-  padding-top: 2.5rem;
   color: #fff;
 }
 
@@ -328,7 +327,7 @@ p {
 
 .pbm {
   padding-bottom: 44px !important;
-} 
+}
 
 .text-sobre {
   background: linear-gradient(
@@ -907,10 +906,5 @@ footer a:hover {
 
   .txt-ola {
     font-size: 54px !important;
-  }
-
-  .box-sobre {
-    padding-top: 14% !important;
-    padding-bottom: 14% !important;
   }
 }

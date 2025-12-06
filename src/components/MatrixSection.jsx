@@ -63,11 +63,12 @@ const MatrixSection = () => {
 
   return (
     <section
+      className="ps"
       style={{
         position: "relative",
         width: "100%",
         overflow: "hidden",
-        backgroundColor: "#000", // fundo preto fixo sem gradiente
+        backgroundColor: "#000",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -88,7 +89,7 @@ const MatrixSection = () => {
         }}
       />
       <div
-        className="container"
+        className="container pc"
         style={{
           position: "relative",
           zIndex: 2,
