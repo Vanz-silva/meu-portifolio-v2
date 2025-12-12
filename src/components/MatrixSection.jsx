@@ -62,41 +62,42 @@ const MatrixSection = () => {
   }, []);
 
   return (
-    <section
-      className="ps"
-      style={{
-        position: "relative",
-        width: "100%",
-        overflow: "hidden",
-        backgroundColor: "#000",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "monospace",
-      }}
-    >
-      <canvas
-        ref={canvasRef}
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: 1,
-          pointerEvents: "none",
-        }}
-      />
+    <section className="ps">
       <div
-        className="container pc"
         style={{
           position: "relative",
-          zIndex: 2,
-          color: "#fff",
+          width: "100%",
+          overflow: "hidden",
+          backgroundColor: "#000",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          fontFamily: "monospace",
         }}
       >
-        <CardGrid />
+        <canvas
+          ref={canvasRef}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        />
+        <div
+          className="container pc"
+          style={{
+            position: "relative",
+            zIndex: 2,
+            color: "#fff",
+          }}
+        >
+          <CardGrid />
+        </div>
       </div>
     </section>
   );
