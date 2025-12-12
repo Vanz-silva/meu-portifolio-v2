@@ -34,19 +34,24 @@ const Projects = () => (
           </div>
         </div>
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta" data-aos="fade-right">
-            <h1>
-              Apresentando o site da Magmenta: moderno, funcional e estratégico!
-            </h1>
-            <p>
-              Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
-              foi criado para captar clientes e apresentar os produtos da
-              empresa de forma clara e profissional. Com design responsivo,
-              adapta-se a qualquer dispositivo, garantindo uma navegação fluida
-              e acessível. Funcionalidades interativas e um layout alinhado à
-              identidade visual reforçam a credibilidade e posicionam a Magmenta
-              como referência no mercado!
-            </p>
+          <div className="txt-magmeta d-flex flex-column gap-3" data-aos="fade-right">
+            <div>
+              <h1>
+                Apresentando o site da Magmenta: moderno, funcional e
+                estratégico!
+              </h1>
+            </div>
+            <div>
+              <p>
+                Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
+                foi criado para captar clientes e apresentar os produtos da
+                empresa de forma clara e profissional. Com design responsivo,
+                adapta-se a qualquer dispositivo, garantindo uma navegação
+                fluida e acessível. Funcionalidades interativas e um layout
+                alinhado à identidade visual reforçam a credibilidade e
+                posicionam a Magmenta como referência no mercado!
+              </p>
+            </div>
           </div>
         </div>
         <div className="col-md-6 col-sm-12 box-projeto">
@@ -87,27 +92,32 @@ const Projects = () => (
           </a>
         </div>
         <div className="col-md-5 col-sm-12 d-flex texto">
-          <div className="txt-magmeta" data-aos="fade-left">
-            <h1>
-              Apresentando o site da Magmenta: moderno, funcional e estratégico!
-            </h1>
-            <p>
-              Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
-              foi criado para captar clientes e apresentar os produtos da
-              empresa de forma clara e profissional. Com design responsivo,
-              adapta-se a qualquer dispositivo, garantindo uma navegação fluida
-              e acessível. Funcionalidades interativas e um layout alinhado à
-              identidade visual reforçam a credibilidade e posicionam a Magmenta
-              como referência no mercado. Um projeto que une tecnologia e
-              estratégia para resultados reais!
-            </p>
+          <div className="txt-magmeta d-flex flex-column gap-3" data-aos="fade-left">
+            <div>
+              <h1>
+                Apresentando o site da Magmenta: moderno, funcional e
+                estratégico!
+              </h1>
+            </div>
+            <div>
+              <p>
+                Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
+                foi criado para captar clientes e apresentar os produtos da
+                empresa de forma clara e profissional. Com design responsivo,
+                adapta-se a qualquer dispositivo, garantindo uma navegação
+                fluida e acessível. Funcionalidades interativas e um layout
+                alinhado à identidade visual reforçam a credibilidade e
+                posicionam a Magmenta como referência no mercado. Um projeto que
+                une tecnologia e estratégia para resultados reais!
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="row ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta" data-aos="fade-right">
+          <div className="txt-magmeta d-flex flex-column gap-3" data-aos="fade-right">
             <h1>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h1>
@@ -178,19 +188,24 @@ const Projects = () => (
       <div className="row pt-5  pb-5 mb-dm-5">
         <div className="col-md-5 col-sm-12 d-flex texto">
           <div className="txt-magmeta text-center" data-aos="fade-down">
-            <h2>
-              Apresentando o site da Magmenta: moderno, funcional e estratégico!
-            </h2>
-            <p>
-              Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
-              foi criado para captar clientes e apresentar os produtos da
-              empresa de forma clara e profissional. Com design responsivo,
-              adapta-se a qualquer dispositivo, garantindo uma navegação fluida
-              e acessível. Funcionalidades interativas e um layout alinhado à
-              identidade visual reforçam a credibilidade e posicionam a Magmenta
-              como referência no mercado. Um projeto que une tecnologia e
-              estratégia para resultados reais!
-            </p>
+            <div>
+              <h2>
+                Apresentando o site da Magmenta: moderno, funcional e
+                estratégico!
+              </h2>
+            </div>
+            <div>
+              <p>
+                Desenvolvido com HTML5, CSS3 e JavaScript, este site empresarial
+                foi criado para captar clientes e apresentar os produtos da
+                empresa de forma clara e profissional. Com design responsivo,
+                adapta-se a qualquer dispositivo, garantindo uma navegação
+                fluida e acessível. Funcionalidades interativas e um layout
+                alinhado à identidade visual reforçam a credibilidade e
+                posicionam a Magmenta como referência no mercado. Um projeto que
+                une tecnologia e estratégia para resultados reais!
+              </p>
+            </div>
           </div>
         </div>
         <div className="col-md-7 col-sm-12 box-projeto" data-aos="fade-down">
