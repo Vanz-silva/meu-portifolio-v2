@@ -6,7 +6,7 @@ import Image from "next/image";
 const CardGrid = () => {
   return (
     <div className="container py-5">
-      <div className="d-flex flex-wrap justify-content-center gap-4">
+      <div className="row justify-content-center g-4">
         {[
           {
             img: "/img/next1.png",
@@ -23,21 +23,40 @@ const CardGrid = () => {
             title:
               "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
           },
+          {
+            img: "/img/iconJs.png",
+            title:
+              "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
+          },
+          {
+            img: "/img/iconPython.png",
+            title:
+              "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
+          },
+          {
+            img: "/img/iconPhp.png",
+            title:
+              "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
+          },
         ].map((card, index) => (
           <div
             key={index}
-            className="card col-card p-3 text-center d-flex flex-colunm gap-3"
-            style={{ width: "300px", flex: "1 1 280px", maxWidth: "100%" }}
+            className="col-12 col-md-4 d-flex justify-content-center"
           >
-            <Image
-              src={card.img}
-              alt={card.title}
-              width={100}
-              height={100}
-              className="img-fluid mx-auto "
-            />
-            <div>
-              <h4 className="h5 text-white">{card.title} </h4>
+            <div
+              className="card col-card p-3 text-center d-flex flex-colunm gap-4"
+              style={{ maxWidth: "100%" }}
+            >
+              <Image
+                src={card.img}
+                alt={card.title}
+                width={100}
+                height={100}
+                className="img-fluid mx-auto"
+              />
+              <div>
+                <h4 className="h5 text-white">{card.title}</h4>
+              </div>
             </div>
           </div>
         ))}

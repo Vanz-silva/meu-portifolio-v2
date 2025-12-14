@@ -7,7 +7,7 @@ const Lottie = () => {
   return (
     <section className="ps">
       <div className="container pc">
-        <div className="row position-relative pt-4">
+        <div className="row position-relative">
           {/* Coluna Esquerda */}
           <div className="col-md-6 d-flex  flex-column align-items-start position-relative z-2">
             <div className="justify-content-center d-flex flex-column gap-3">
