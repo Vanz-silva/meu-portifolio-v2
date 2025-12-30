@@ -96,16 +96,16 @@ const Lottie = () => {
 
           {/* Coluna Direita */}
           <div className="col-md-6 d-flex  flex-column align-items-start position-relative z-2">
-            <div className="container py-5">
+            <div className="container py-5 d-flex flex-column gap-2">
               {/* Hero Section */}
-              <div className=" mb-3">
+              <div className="">
                 <h4 className="display-4 fs-1 fw-bold">
                   Tecnologia & Inovação no Front-End
                 </h4>
               </div>
 
               {/* Parágrafo Principal */}
-              <div className="mb-3">
+              <div className="">
                 <p className="lead fs-6">
                   Vivemos uma era em que a tecnologia deixou de ser apenas uma
                   ferramenta — ela se tornou o palco da transformação. Inovação
@@ -122,7 +122,7 @@ const Lottie = () => {
               </div>
 
               {/* Citação / Destaque */}
-              <div className="box-des mt-4">
+              <div className="box-des">
                 <h5 className="text-des fst-italic">
                   Interfaces não são apenas visuais — são portais para
                   experiências. E o front-end é onde a inovação encontra o
