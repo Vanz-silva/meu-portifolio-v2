@@ -26,17 +26,17 @@ const CardGrid = () => {
           {
             img: "/img/iconJs.png",
             title:
-              "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
+              "JavaScript transforma interfaces em experiências interativas, dinâmicas e responsivas.",
           },
           {
             img: "/img/iconPython.png",
             title:
-              "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
+              "Python simplifica o desenvolvimento com código claro, poderoso e altamente produtivo para diversas aplicações",
           },
           {
             img: "/img/iconPhp.png",
             title:
-              "Node.js conecta tudo no backend, criando APIs velozes e escaláveis.",
+              "PHP sustenta aplicações web dinâmicas, conectando lógica de servidor, dados e performance com eficiência.",
           },
         ].map((card, index) => (
           <div

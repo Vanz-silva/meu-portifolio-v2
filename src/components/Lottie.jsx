@@ -19,26 +19,31 @@ const Lottie = () => {
               </div>
 
               {/* Parágrafo Principal */}
-              <div>
-                <p className="lead fs-6">
-                  Vivemos uma era em que a tecnologia deixou de ser apenas uma
-                  ferramenta — ela se tornou o palco da transformação. Inovação
-                  não é mais um diferencial; é a linguagem do futuro. E no
-                  front-end, essa linguagem ganha forma, cor, interação e vida.
-                </p>
-                <p className="lead fs-6">
-                  Negócios que antes operavam em estruturas rígidas agora fluem
-                  em ecossistemas inteligentes, onde interfaces conectam ideias,
-                  dados e pessoas em tempo real. Startups nascem em nuvens.
-                  Produtos digitais ganham vida na ponta dos dedos. O impossível
-                  se torna beta.
-                </p>
+              <div className="d-flex flex-column gap-2">
+                <div>
+                  <p className="lead fs-6">
+                    Vivemos uma era em que a tecnologia deixou de ser apenas uma
+                    ferramenta ela se tornou o palco da transformação.
+                    Inovação não é mais um diferencial; é a linguagem do futuro.
+                    E no front-end, essa linguagem ganha forma, cor, interação e
+                    vida.
+                  </p>
+                </div>
+                <div>
+                  <p className="lead fs-6">
+                    Negócios que antes operavam em estruturas rígidas agora
+                    fluem em ecossistemas inteligentes, onde interfaces conectam
+                    ideias, dados e pessoas em tempo real. Startups nascem em
+                    nuvens. Produtos digitais ganham vida na ponta dos dedos. O
+                    impossível se torna beta.
+                  </p>
+                </div>
               </div>
 
               {/* Citação / Destaque */}
               <div className="box-des">
                 <h5 className="text-des fst-italic">
-                  Interfaces não são apenas visuais — são portais para
+                  Interfaces não são apenas visuais são portais para
                   experiências. E o front-end é onde a inovação encontra o
                   usuário.
                 </h5>
@@ -96,37 +101,43 @@ const Lottie = () => {
 
           {/* Coluna Direita */}
           <div className="col-md-6 d-flex  flex-column align-items-start position-relative z-2">
-            <div className="container py-5 d-flex flex-column gap-2">
+            <div className="container py-5 d-flex flex-column gap-3">
               {/* Hero Section */}
               <div className="">
                 <h4 className="display-4 fs-1 fw-bold">
-                  Tecnologia & Inovação no Front-End
+                  React e o Futuro das Interfaces de Alta Performance
                 </h4>
               </div>
 
               {/* Parágrafo Principal */}
-              <div className="">
-                <p className="lead fs-6">
-                  Vivemos uma era em que a tecnologia deixou de ser apenas uma
-                  ferramenta — ela se tornou o palco da transformação. Inovação
-                  não é mais um diferencial; é a linguagem do futuro. E no
-                  front-end, essa linguagem ganha forma, cor, interação e vida.
-                </p>
-                <p className="lead fs-6">
-                  Negócios que antes operavam em estruturas rígidas agora fluem
-                  em ecossistemas inteligentes, onde interfaces conectam ideias,
-                  dados e pessoas em tempo real. Startups nascem em nuvens.
-                  Produtos digitais ganham vida na ponta dos dedos. O impossível
-                  se torna beta.
-                </p>
+
+              <div className="d-flex flex-column gap-2">
+                <div>
+                  <p className="lead fs-6">
+                    O front-end moderno não aceita mais rigidez. Para inovar, é
+                    preciso agilidade, escala e, acima de tudo, foco na
+                    experiência do usuário. É aqui que o React se consolida como
+                    o motor da inovação digital.
+                  </p>
+                </div>
+                <div>
+                  <p className="lead fs-6">
+                    Com sua arquitetura baseada em componentes reutilizáveis, o
+                    React permite construir interfaces dinâmicas, performáticas
+                    e altamente escaláveis, adaptando-se rapidamente às mudanças
+                    do negócio. Ele reduz a complexidade do desenvolvimento,
+                    acelera entregas e garante experiências fluidas em qualquer
+                    dispositivo, colocando o usuário no centro de cada interação
+                    e transformando interfaces em verdadeiros produtos digitais.
+                  </p>
+                </div>
               </div>
 
               {/* Citação / Destaque */}
               <div className="box-des">
                 <h5 className="text-des fst-italic">
-                  Interfaces não são apenas visuais — são portais para
-                  experiências. E o front-end é onde a inovação encontra o
-                  usuário.
+                  Arquitetando o amanhã com React: transformando ideias em
+                  interfaces vivas, ágeis e centradas no usuário.
                 </h5>
               </div>
             </div>
