@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.21",
     "bootstrap": "5.3",
     "lottie-react": "^2.4.1",
-    "next": "^15.0.4-canary.48",
+    "next": "15.6.0-canary.60",
     "postcss": "^8.5.6",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.11.5",
