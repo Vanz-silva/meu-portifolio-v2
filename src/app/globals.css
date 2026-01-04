@@ -729,11 +729,12 @@ footer a:hover {
 }
 
 .pc {
-  padding: 44px 0 44px 0px !important;
+  padding-top: 44px !important;
+  padding-bottom: 44px !important;
 }
 
 .ps {
-  padding: 54px 0 54px 0px !important;
+  padding: 54px 0 54px 0px;
 }
 
 #et img {
@@ -872,6 +873,11 @@ footer a:hover {
 
   #nav {
     display: none !important;
+  }
+
+  .ps {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
   }
 }
 
