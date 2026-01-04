@@ -38,13 +38,12 @@ const Contato = () => {
 
         {/* TEXTO */}
         <div
-          className="col-md-6 col-12 box-vamos order-2 order-md-1 gap-3 d-flex flex-column"
+          className="col-md-5 col-12 box-vamos order-2 order-md-1 gap-3 d-flex flex-column"
           data-aos="fade-left"
         >
           <div>
             <h1 id="txt-b-matrix">
-              Conheça mais sobre meu trabalho entre em contato! Vamos
-              conversar?!
+              Conheça mais sobre meu trabalho Vamos conversar?!
             </h1>
           </div>
           <div className="d-flex box-btn-colorido-2  w-100">
