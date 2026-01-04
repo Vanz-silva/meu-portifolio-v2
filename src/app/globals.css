@@ -21,6 +21,24 @@ main {
   padding: 0% !important;
 }
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Next */
+#__next {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* segurança */
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
