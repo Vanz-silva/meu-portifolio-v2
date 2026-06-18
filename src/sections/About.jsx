@@ -37,15 +37,16 @@ const About = () => {
               <div className="circle-border border2"></div>
               <div className="circle-border border3"></div>
               <div className="circle">
-                <Image
-                  sizes="100%"
-                  style={{ width: "100%", height: "100%" }}
-                  src="/img/cyberVanz.png"
-                  width={0}
-                  height={0}
-                  alt="Descrição da imagem"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="img-fluid"
-                />
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                >
+                  <source src="/videos/VanzV.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>

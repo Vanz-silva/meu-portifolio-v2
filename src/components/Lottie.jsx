@@ -42,7 +42,7 @@ const Lottie = () => {
 
               {/* Citação / Destaque */}
               <div className="box-des">
-                <h5 className="text-des fst-italic">
+                <h5 className="text-des ms-2 fst-italic">
                   Interfaces não são apenas visuais são portais para
                   experiências. E o front-end é onde a inovação encontra o
                   usuário.
@@ -135,7 +135,7 @@ const Lottie = () => {
 
               {/* Citação / Destaque */}
               <div className="box-des">
-                <h5 className="text-des fst-italic">
+                <h5 className="text-des ms-2 fst-italic">
                   Arquitetando o amanhã com React: transformando ideias em
                   interfaces vivas, ágeis e centradas no usuário.
                 </h5>

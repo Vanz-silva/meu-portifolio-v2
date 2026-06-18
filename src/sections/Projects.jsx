@@ -34,7 +34,10 @@ const Projects = () => (
           </div>
         </div>
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta d-flex flex-column gap-3" data-aos="fade-right">
+          <div
+            className="txt-magmeta d-flex flex-column gap-3"
+            data-aos="fade-right"
+          >
             <div>
               <h1>
                 Apresentando o site da Magmenta: moderno, funcional e
@@ -59,19 +62,28 @@ const Projects = () => (
             className="justify-content-end d-flex box-mockup-img"
             data-aos="fade-left"
           >
-            <a
-              href="https://magmeta.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/img/mockup-celu.svg"
-                alt="Descrição da Imagem"
-                width={0}
-                height={0}
-                style={{ width: "100%", height: "auto" }}
-              />
-            </a>
+            <div className="tv-3d-wrapper">
+              <div className="tv-3d">
+                <a
+                  href="https://magmeta.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="img-fluid tv-screen"
+                  >
+                    <source src="/videos/tv.mp4" type="video/mp4" />
+                  </video>
+                </a>
+              </div>
+
+              <div className="tv-stand"></div>
+              <div className="tv-stand-base"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -92,7 +104,10 @@ const Projects = () => (
           </a>
         </div>
         <div className="col-md-5 col-sm-12 d-flex texto">
-          <div className="txt-magmeta d-flex flex-column gap-3" data-aos="fade-left">
+          <div
+            className="txt-magmeta d-flex flex-column gap-3"
+            data-aos="fade-left"
+          >
             <div>
               <h1>
                 Apresentando o site da Magmenta: moderno, funcional e
@@ -117,7 +132,10 @@ const Projects = () => (
 
       <div className="row ">
         <div className="col-md-6 col-sm-12 d-flex texto justify-content-center">
-          <div className="txt-magmeta d-flex flex-column gap-3" data-aos="fade-right">
+          <div
+            className="txt-magmeta d-flex flex-column gap-3"
+            data-aos="fade-right"
+          >
             <h1>
               Apresentando o site da Magmenta: moderno, funcional e estratégico!
             </h1>
@@ -138,7 +156,7 @@ const Projects = () => (
             data-aos="fade-left"
           >
             <Image
-              src="/img/mockup-celu.svg"
+              src="/img/mockup-cel-mobile.svg"
               alt="Descrição da Imagem"
               width={0}
               height={0}

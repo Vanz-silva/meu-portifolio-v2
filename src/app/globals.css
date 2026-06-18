@@ -173,7 +173,7 @@ h4 {
 }
 
 .box-des {
-  border-left: 2px solid #6610f2;
+  border-left: 4px solid #6610f2;
 }
 
 h6,
@@ -222,7 +222,7 @@ nav ul li a:hover {
 
 p {
   color: #fff;
-  line-height: 1.5;
+  margin-bottom: 0 !important;
 }
 
 #sobre-mim {
@@ -768,6 +768,121 @@ footer a:hover {
   transform-origin: center center;
 }
 
+/* Container principal */
+.box-mockup-img {
+  perspective: 1800px;
+}
+
+/* Wrapper */
+.tv-3d-wrapper {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+/* TV */
+.tv-3d {
+  position: relative;
+
+  transform: rotateY(-12deg) rotateX(3deg);
+  transform-style: preserve-3d;
+
+  transition: all 0.5s ease;
+
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.45));
+}
+
+.tv-3d:hover {
+  transform: rotateY(-8deg) rotateX(2deg) scale(1.02);
+}
+
+/* Tela */
+.tv-screen {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border: 10px solid #111;
+  border-radius: 12px;
+
+  background: #000;
+
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.2), 0 0 0 2px #2f2f2f,
+    0 15px 40px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+}
+
+/* Reflexo na tela */
+.tv-3d::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 35%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.04),
+    transparent
+  );
+
+  border-radius: 12px;
+
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Espessura lateral */
+.tv-3d::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: -12px;
+
+  width: 12px;
+  height: calc(100% - 16px);
+
+  background: linear-gradient(to right, #2c2c2c, #111);
+
+  transform: rotateY(90deg);
+  transform-origin: left center;
+}
+
+/* Haste da base */
+.tv-stand {
+  width: 45px;
+  height: 55px;
+
+  margin: 0 auto;
+
+  background: linear-gradient(to bottom, #444, #1a1a1a);
+
+  border-radius: 0 0 8px 8px;
+
+  transform: translateY(-2px);
+}
+
+/* Base da TV */
+.tv-stand-base {
+  width: 220px;
+  height: 14px;
+
+  margin: 0 auto;
+
+  border-radius: 50px;
+
+  background: linear-gradient(to bottom, #4b4b4b, #161616);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.15);
+}
+
 @keyframes rotateBrain {
   0% {
     transform: rotate(0deg);
@@ -909,6 +1024,16 @@ footer a:hover {
 
   .txt-ola {
     font-size: 54px !important;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  .txt-card-s {
+    font-size: 1rem !important;
+  }
+
+  #saturno {
+    display: none !important;
   }
 }
 

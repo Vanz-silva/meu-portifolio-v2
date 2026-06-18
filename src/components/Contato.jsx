@@ -12,15 +12,16 @@ const Contato = () => {
             <div className="circle-border border2"></div>
             <div className="circle-border border3"></div>
             <div className="circle">
-              <Image
-                sizes="100%"
-                style={{ width: "100%", height: "100%" }}
-                src="/img/text.png"
-                width={0}
-                height={0}
-                alt="Descrição da imagem"
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 className="img-fluid"
-              />
+              >
+                <source src="/videos/cyberVanzV.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
           {/* <div className="circle-wrapper" data-aos="zoom-in-up">

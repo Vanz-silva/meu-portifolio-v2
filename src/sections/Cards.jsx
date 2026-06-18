@@ -55,7 +55,7 @@ const CardGrid = () => {
                 className="img-fluid mx-auto"
               />
               <div>
-                <h4 className="h5 text-white">{card.title}</h4>
+                <h4 className="h5 text-white txt-card-s">{card.title}</h4>
               </div>
             </div>
           </div>
